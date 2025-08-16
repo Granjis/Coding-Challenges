@@ -16,7 +16,7 @@ class Solution:
             #While walking through the list, everytime the current position is even, we move the half of the list one node 
             # to the left.
             if current_node_index % 2 == 0:
-                current_middle_node = current_middle_node.next
+                current_middle_node = current_middle_node.next # type: ignore
             current_node_index += 1
             current_node = current_node.next
         return current_middle_node
